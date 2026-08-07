@@ -53,6 +53,23 @@ core.register_tool("jc_party:didgeridoo", {
       return itemstack
     end
 
+    -- Let nodes such as item frames and pedestals handle the click.
+    if pointed_thing and pointed_thing.type == "node" then
+      local node = core.get_node(pointed_thing.under)
+      local def = core.registered_nodes[node.name]
+
+      if def and def.on_rightclick then
+        return def.on_rightclick(
+          pointed_thing.under,
+          node,
+          user,
+          itemstack,
+          pointed_thing
+        )
+      end
+    end
+
+    -- Otherwise, play the didgeridoo thud.
     core.sound_play("jc_party_didgeridoo_thud", {
       object = user,
       gain = 1.0,
