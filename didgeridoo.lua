@@ -26,8 +26,8 @@ core.register_tool("jc_party:didgeridoo", {
   description = S("Didgeridoo"),
   inventory_image = "jc_party_didgeridoo.png",
   wield_image = "jc_party_didgeridoo.png",
-  stack_max = 1,
   wield_scale = {x = 1.5, y = 6.0, z = 1},
+  stack_max = 1,
   on_use = function(itemstack, user)
     if not user then
       return itemstack
@@ -38,6 +38,7 @@ core.register_tool("jc_party:didgeridoo", {
       return itemstack
     end
     last_use[name] = now
+    jc_party.alert_jc_special_monsters(user)
     core.sound_play(
       didgeridoo_sounds[math.random(#didgeridoo_sounds)],
       {
@@ -68,6 +69,8 @@ core.register_tool("jc_party:didgeridoo", {
         )
       end
     end
+
+    jc_party.alert_jc_special_monsters(user)
 
     -- Otherwise, play the didgeridoo thud.
     core.sound_play("jc_party_didgeridoo_thud", {

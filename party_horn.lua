@@ -70,6 +70,8 @@ core.register_tool("jc_party:party_horn", {
 
     last_use[name] = now
 
+    jc_party.alert_jc_special_monsters(user)
+
     horn_count[name] = horn_count[name] or 0
     tired_left[name] = tired_left[name] or 0
 
