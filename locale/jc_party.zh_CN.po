@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jc_party\n"
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: party_horn.lua
+msgid "Party Horn"
+msgstr "派对喇叭"
+
+#: didgeridoo.lua
+msgid "Didgeridoo"
+msgstr "迪吉里杜管"
