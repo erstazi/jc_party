@@ -98,11 +98,18 @@ core.register_tool("jc_party:party_horn", {
       sound = horn_sounds[math.random(#horn_sounds)]
     end
 
-    core.sound_play(sound, {
-      object = user,
-      gain = 1.0,
-      max_hear_distance = 32,
-    })
+    -- core.sound_play(sound, {
+      -- object = user,
+      -- gain = 1.0,
+      -- max_hear_distance = 32,
+    -- })
+
+    -- jc_party.play_sound(user, sound, {
+      -- object = user,
+      -- gain = 1.0,
+      -- max_hear_distance = 32,
+    -- })
+    jc_party.play_sound_for_nearby_players(user, sound, 32, 1.0)
 
     return itemstack
   end,

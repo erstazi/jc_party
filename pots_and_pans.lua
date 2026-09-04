@@ -68,14 +68,21 @@ core.register_tool("jc_party:pots_pans", {
 
     jc_party.alert_jc_special_monsters(user)
 
-    core.sound_play(
-      pots_pans_sounds[math.random(#pots_pans_sounds)],
-      {
-        object = user,
-        gain = 1.0,
-        max_hear_distance = 18,
-      }
-    )
+    -- core.sound_play(
+      -- pots_pans_sounds[math.random(#pots_pans_sounds)],
+      -- {
+        -- object = user,
+        -- gain = 1.0,
+        -- max_hear_distance = 18,
+      -- }
+    -- )
+
+    -- jc_party.play_sound(user, pots_pans_sounds[math.random(#pots_pans_sounds)], {
+      -- object = user,
+      -- gain = 1.0,
+      -- max_hear_distance = 18,
+    -- })
+    jc_party.play_sound_for_nearby_players(user, pots_pans_sounds[math.random(#pots_pans_sounds)], 30, 1.0)
 
     return itemstack
   end,
@@ -103,11 +110,18 @@ core.register_tool("jc_party:pots_pans", {
 
     jc_party.alert_jc_special_monsters(user)
 
-    core.sound_play("jc_party_pots_pans_thud", {
-      object = user,
-      gain = 1.0,
-      max_hear_distance = 8,
-    })
+    -- core.sound_play("jc_party_pots_pans_thud", {
+      -- object = user,
+      -- gain = 1.0,
+      -- max_hear_distance = 8,
+    -- })
+
+    -- jc_party.play_sound(user, "jc_party_pots_pans_thud", {
+      -- object = user,
+      -- gain = 1.0,
+      -- max_hear_distance = 8,
+    -- })
+    jc_party.play_sound_for_nearby_players(user, "jc_party_pots_pans_thud", 30, 1.0)
 
     return itemstack
   end,
