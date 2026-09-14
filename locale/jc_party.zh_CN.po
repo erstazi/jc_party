@@ -12,3 +12,7 @@ msgstr "派对喇叭"
 #: didgeridoo.lua
 msgid "Didgeridoo"
 msgstr "迪吉里杜管"
+
+#: whistle.lua
+msgid "Whistle"
+msgstr "哨子"

@@ -12,3 +12,7 @@ msgstr "Trąbka imprezowa"
 #: didgeridoo.lua
 msgid "Didgeridoo"
 msgstr "Didgeridoo"
+
+#: whistle.lua
+msgid "Whistle"
+msgstr "Gwizdek"

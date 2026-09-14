@@ -12,3 +12,7 @@ msgstr "Corneta de Festa"
 #: didgeridoo.lua
 msgid "Didgeridoo"
 msgstr "Didjeridu"
+
+#: whistle.lua
+msgid "Whistle"
+msgstr "Apito"

@@ -11,3 +11,7 @@ msgstr ""
 #: didgeridoo.lua
 msgid "Didgeridoo"
 msgstr ""
+
+#: whistle.lua
+msgid "Whistle"
+msgstr ""

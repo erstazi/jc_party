@@ -65,4 +65,5 @@ end
 dofile(modpath .. "/monster_alert.lua")
 dofile(modpath .. "/party_horn.lua")
 dofile(modpath .. "/didgeridoo.lua")
+dofile(modpath .. "/whistle.lua")
 dofile(modpath .. "/pots_and_pans.lua")

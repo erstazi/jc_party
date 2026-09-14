@@ -12,3 +12,7 @@ msgstr "Праздничная дудка"
 #: didgeridoo.lua
 msgid "Didgeridoo"
 msgstr "Диджериду"
+
+#: whistle.lua
+msgid "Whistle"
+msgstr "Свисток"

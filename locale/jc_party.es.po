@@ -12,3 +12,7 @@ msgstr "Bocina de Fiesta"
 #: didgeridoo.lua
 msgid "Didgeridoo"
 msgstr "Didyeridú"
+
+#: whistle.lua
+msgid "Whistle"
+msgstr "Silbato"

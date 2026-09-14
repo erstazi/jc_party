@@ -12,3 +12,7 @@ msgstr "Party Horn"
 #: didgeridoo.lua
 msgid "Didgeridoo"
 msgstr "Didgeridoo"
+
+#: whistle.lua
+msgid "Whistle"
+msgstr "Whistle"
